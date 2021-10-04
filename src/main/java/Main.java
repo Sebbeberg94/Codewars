@@ -4,7 +4,28 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(top3("Hej hallå.     ' ' '     Jag hete'r hete'r hete'r hej Sebastian's )eller."));
+        char[][] triplets = {
+                {'t','u','p'},
+                {'w','h','i'},
+                {'t','s','u'},
+                {'a','t','s'},
+                {'h','a','p'},
+                {'t','i','s'},
+                {'w','h','s'}
+        };
+        System.out.println(recoverSecret(triplets));
+    }
+
+    public static String recoverSecret(char[][] triplets) {
+        StringBuilder builder = new StringBuilder();
+        Set<Character> uniqueChars = new HashSet<>();
+        for (int i = 0; i < 8; i++) {
+
+        }
+        for (char c : uniqueChars) {
+            builder.append(c);
+        }
+        return builder.toString();
     }
 
     public static List<String> top3(String s) {
